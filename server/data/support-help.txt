@@ -1,0 +1,65 @@
+Customer Support and Help Resources
+
+Email Support:
+- Primary support email: support@reaidy.io
+- Support hours: Monday to Friday, 9 AM to 6 PM IST
+- Response time: 24 hours for Pro and Enterprise plans, 48 hours for Basic plan subscribers
+- Enterprise customers can use priority-support@reaidy.io for urgent issues
+- Include your account email and detailed description when contacting support
+
+Technical Support:
+- Technical issues can be reported through the support ticket system in user dashboard
+- Include screenshots, error messages, and detailed problem description for faster resolution
+- Technical team typically responds within 4-8 business hours for standard tickets
+- Critical system issues are tracked and updated via status page
+- Browser console logs can be helpful for technical troubleshooting
+
+Self-Service Resources:
+- Comprehensive knowledge base available with frequently asked questions and step-by-step tutorials
+- Video guides available for common tasks and feature walkthroughs
+- API documentation and integration guides available at documentation portal
+- Community forum for user discussions, tips, and best practices
+- Search functionality to quickly find relevant help articles
+
+Account Management:
+- Enterprise plan customers have access to a dedicated account manager
+- Monthly check-in sessions can be scheduled to optimize hiring processes
+- Custom features or integrations can be requested through account manager
+- Personalized training sessions are available for team onboarding
+- Quarterly business reviews to discuss usage and optimization opportunities
+
+Troubleshooting Common Issues:
+
+Login Issues:
+- Clear browser cache and cookies, then try logging in again
+- Use incognito or private browsing mode to test
+- Reset password using the forgot password link on login page
+- Ensure browser is updated to latest version
+- Try different browser or device if issue persists
+
+Interview Not Starting:
+- Check internet connection stability
+- Verify browser compatibility (Chrome, Firefox, Safari, Edge are supported)
+- Allow camera and microphone permissions in browser settings
+- Disable browser extensions that might interfere
+- Ensure JavaScript is enabled in browser settings
+
+Resume Upload Errors:
+- File size must be under 10MB
+- Supported formats: PDF, DOCX, DOC, TXT
+- Ensure file is not password protected or corrupted
+- Try converting to PDF format if issues persist
+- Check that file name doesn't contain special characters
+
+Payment Issues:
+- Contact billing support for payment-related inquiries
+- Verify payment method details in account settings
+- Check with bank or payment provider for transaction status
+- Ensure sufficient funds or credit limit available
+- Update expired credit cards or payment methods in account settings
+
+General Troubleshooting:
+- Refresh the page or restart browser if experiencing unexpected behavior
+- Clear browser cache and cookies regularly for optimal performance
+- Check status page for known system issues or scheduled maintenance
+- Ensure system requirements are met for optimal platform performance

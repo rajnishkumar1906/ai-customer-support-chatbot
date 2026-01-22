@@ -1,0 +1,38 @@
+Subscription Plans and Pricing Information
+
+Basic Plan - Free Tier:
+- Resume screening for up to 50 candidates per month
+- One AI interview per month
+- Basic candidate evaluation reports
+- Email support with 48-hour response time
+- Standard features access
+
+Pro Plan - ₹999 per month:
+- Unlimited resume screening
+- Unlimited AI interviews
+- Advanced analytics and insights dashboard
+- Priority email support with 24-hour response time
+- Custom interview templates creation
+- Team collaboration features
+- PDF export for candidate reports
+- Advanced filtering and search capabilities
+
+Enterprise Plan - Custom Pricing:
+- All Pro plan features included
+- API access for system integrations
+- Dedicated account manager
+- Custom hiring workflows and processes
+- Advanced security and compliance features
+- Single Sign-On (SSO) integration
+- Custom reporting and analytics dashboards
+- On-site training and support sessions
+- Service Level Agreement (SLA) guarantee for uptime and support response
+
+Billing Information:
+- All plans support monthly or annual billing cycles
+- Annual subscriptions receive a 20% discount on total price
+- Payment methods accepted: Credit cards, debit cards, UPI, bank transfers
+- Invoices are automatically generated and sent via email
+- GST applicable for Indian customers as per government regulations
+- Billing cycle starts from the date of subscription activation
+- Auto-renewal enabled by default, can be disabled in account settings

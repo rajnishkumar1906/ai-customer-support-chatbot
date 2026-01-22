@@ -1,0 +1,56 @@
+Refund and Cancellation Policies
+
+Refund Policy:
+- Refunds are only applicable for annual subscription plans
+- Refund requests must be submitted within 7 days of initial purchase
+- Monthly subscriptions are non-refundable but can be cancelled at any time
+- Pro-rated refunds are available for unused months in annual plans
+- Refund processing time is 5-10 business days from approval
+- Refunds are processed to the original payment method used
+- Processing fees, if any, may be deducted from refund amount
+
+Cancellation Policy:
+- Subscriptions can be cancelled at any time from account settings
+- Cancellation takes effect at the end of the current billing period
+- Full access to all features is retained until the billing period ends
+- No cancellation fees or penalties are charged
+- Account data is retained for 90 days after cancellation for reactivation purposes
+- After 90 days, data may be permanently deleted per data retention policy
+- Reactivation within 90 days restores all previous data and settings
+
+Account Security:
+- Users are responsible for maintaining the security of their account credentials
+- Use strong, unique passwords for account access
+- Enable two-factor authentication for enhanced security
+- Report suspicious activity or unauthorized access immediately
+- Platform is not responsible for unauthorized access due to compromised user credentials
+- Regular security updates and patches are applied automatically
+
+Data Privacy:
+- All candidate and user data is encrypted and stored securely
+- Platform complies with GDPR, CCPA, and other applicable data protection regulations
+- Data retention policy: 1 year for active accounts, 90 days after account cancellation
+- Data deletion requests can be submitted to privacy support email
+- Candidate and user data is never sold to third parties
+- Data sharing only occurs with explicit user consent or as required by law
+
+Terms of Service:
+- Platform usage must comply with terms of service agreement
+- Prohibited activities include spam, fraud, misuse of AI features, or any illegal activities
+- Violations of terms may result in account suspension or termination
+- Fair use policy applies to API usage and interview limits
+- Users must respect intellectual property rights of the platform
+
+Service Level Agreement:
+- Enterprise plan customers receive 99.9% uptime guarantee
+- Scheduled maintenance windows occur on Sundays from 2-4 AM IST
+- Emergency maintenance notifications are sent via email and platform notifications
+- SLA credits are available for extended downtime periods exceeding guaranteed uptime
+- Support response time guarantees vary by subscription plan tier
+
+Payment Terms:
+- All prices are displayed in Indian Rupees (₹) unless otherwise specified
+- Accepted payment methods include credit cards, debit cards, UPI, and bank transfers
+- Invoices are automatically generated and emailed after each billing cycle
+- GST is applicable for Indian customers as per government tax regulations
+- Payment failures may result in temporary service suspension until payment is resolved

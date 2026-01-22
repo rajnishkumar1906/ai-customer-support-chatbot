@@ -1,0 +1,25 @@
+Reaidy.io is an AI-powered hiring and recruitment platform designed to help companies evaluate candidates efficiently using artificial intelligence.
+
+The platform allows companies to conduct AI-based interviews to assess technical and communication skills of candidates.
+
+Reaidy.io supports interviews for MERN stack developers, including JavaScript, React, Node.js, Express, and MongoDB.
+
+The Basic plan of Reaidy.io is free and includes resume screening and one AI interview per month.
+
+The Pro plan costs ₹999 per month and includes unlimited AI interviews, advanced analytics, and priority email support.
+
+The Enterprise plan is custom-priced and includes API access, dedicated account management, and custom hiring workflows.
+
+Candidates receive AI interview results immediately after completing the interview.
+
+Users can reset their password by clicking the "Forgot Password" option available on the login page.
+
+Refunds are only applicable for annual subscriptions and must be requested within seven days of purchase.
+
+Reaidy.io follows industry-standard security practices to protect user and interview data.
+
+If users face login issues, they should try clearing their browser cache or resetting their password.
+
+Customer support is available via email at support@reaidy.io from Monday to Friday during business hours.
+
+Technical issues can be reported by raising a support ticket directly from the user dashboard.
