@@ -1,37 +1,36 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api`,
-  withCredentials: true, // future-proof (cookies, auth)
+  baseURL: `${import.meta.env.VITE_API_URL}/api`,
+  withCredentials: true,
   headers: {
     "Content-Type": "application/json",
   },
 });
 
-// Add request interceptor for debugging
-api.interceptors.request.use(
-  (config) => {
-    console.log("API Request:", config.method?.toUpperCase(), config.url);
-    return config;
-  },
-  (error) => {
-    console.error("API Request Error:", error);
-    return Promise.reject(error);
-  }
-);
+/* ✅ REQUEST INTERCEPTOR (DEV ONLY) */
+if (import.meta.env.DEV) {
+  api.interceptors.request.use(
+    (config) => {
+      console.log(
+        "API Request:",
+        config.method?.toUpperCase(),
+        config.baseURL + config.url
+      );
+      return config;
+    },
+    (error) => Promise.reject(error)
+  );
+}
 
-// Add response interceptor for error handling
+/* ✅ RESPONSE INTERCEPTOR (SAFE FOR PROD) */
 api.interceptors.response.use(
-  (response) => {
-    return response;
-  },
+  (response) => response,
   (error) => {
     console.error("API Error:", {
-      message: error.message,
       status: error.response?.status,
-      data: error.response?.data,
+      message: error.message,
       url: error.config?.url,
-      baseURL: error.config?.baseURL,
     });
     return Promise.reject(error);
   }
