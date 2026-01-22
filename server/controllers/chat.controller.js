@@ -64,6 +64,9 @@ export const sendMessage = async (req, res) => {
     });
   } catch (err) {
     console.error("Error in sendMessage:", err);
-    res.status(500).json({ error: "Server error" });
+    res.status(500).json({
+      error: "Server error",
+      message: err.message || "Failed to process message",
+    });
   }
 };
