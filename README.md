@@ -251,12 +251,61 @@ cd client
 npm run build
 ```
 
+The build output will be in the `client/dist` directory.
+
+### Environment Variables for Frontend
+
+Create a `.env` file in the `client` directory:
+
+```env
+# For production, replace with your deployed server URL
+VITE_API_URL=https://your-server-url.com
+VITE_SERVER_URL=https://your-server-url.com
+```
+
+**Important**: For production deployment, make sure to set these environment variables to point to your deployed server URL.
+
 ### Start Production Server
 
 ```bash
 cd server
 npm start
 ```
+
+## Deployment
+
+### Frontend Deployment
+
+1. Set environment variables in your deployment platform:
+   - `VITE_API_URL`: Your deployed backend URL
+   - `VITE_SERVER_URL`: Your deployed backend URL (for Socket.IO)
+
+2. Build the frontend:
+   ```bash
+   cd client
+   npm run build
+   ```
+
+3. Deploy the `client/dist` folder to your hosting service (Vercel, Netlify, etc.)
+
+### Backend Deployment
+
+1. Set environment variables:
+   - `PORT`: Server port (default: 5000)
+   - `MONGO_URI`: MongoDB connection string
+   - `OPENROUTER_API_KEY`: Your OpenRouter API key
+
+2. Make sure MongoDB is accessible from your deployment environment
+
+3. Run the ingestion script to populate the knowledge base:
+   ```bash
+   npm run ingest
+   ```
+
+4. Start the server:
+   ```bash
+   npm start
+   ```
 
 ## License
 

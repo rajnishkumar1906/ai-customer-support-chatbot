@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ChatWindow from "../components/ChatWindow";
-import { sendMessage, getHistory } from "../services/api";
+import api from "../services/api";
+import ChatBubble from "../components/ChatBubble";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -11,11 +11,11 @@ const Chat = () => {
 
   useEffect(() => {
     if (conversationId) {
-      getHistory(conversationId).then((res) =>
+      api.get(`/chat/history/${conversationId}`).then((res) =>
         setMessages(res.data)
       );
     }
-  }, []);
+  }, [conversationId]);
 
   const handleSend = async (text) => {
     setMessages((prev) => [
@@ -24,7 +24,7 @@ const Chat = () => {
     ]);
     setLoading(true);
 
-    const res = await sendMessage({
+    const res = await api.post("/chat/send", {
       conversationId,
       message: text,
     });
@@ -68,11 +68,56 @@ const Chat = () => {
           </a>
         </div>
 
-        <ChatWindow
-          messages={messages}
-          loading={loading}
-          onSend={handleSend}
-        />
+        <div className="flex-1 overflow-y-auto p-6 space-y-4">
+          {messages.map((msg, idx) => (
+            <ChatBubble
+              key={idx}
+              role={msg.role}
+              content={msg.content}
+              source={msg.source}
+              model={msg.model}
+            />
+          ))}
+          {loading && (
+            <div className="flex gap-3 justify-start">
+              <div className="bg-gray-100 rounded-2xl rounded-tl-none px-4 py-3">
+                <div className="flex gap-1">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce"></div>
+                  <div className="w-2 h-2 bg-purple-500 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                  <div className="w-2 h-2 bg-pink-500 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="px-6 py-4 border-t">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const input = e.target.message.value;
+              if (input.trim()) {
+                handleSend(input);
+                e.target.message.value = "";
+              }
+            }}
+            className="flex gap-4"
+          >
+            <input
+              type="text"
+              name="message"
+              placeholder="Type your message..."
+              disabled={loading}
+              className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              type="submit"
+              disabled={loading}
+              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
+            >
+              Send
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

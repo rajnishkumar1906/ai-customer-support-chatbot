@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
-import { getAnalytics } from "../services/api";
+import api from "../services/api";
 
 const Dashboard = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    getAnalytics().then((res) => setData(res.data));
+    api.get("/analytics/summary").then((res) => setData(res.data)).catch((err) => {
+      console.error("Error fetching analytics:", err);
+      setData({});
+    });
   }, []);
 
   return (
@@ -21,7 +24,7 @@ const Dashboard = () => {
               Total Messages
             </p>
             <p className="text-2xl font-bold">
-              {data.totalMessages}
+              {data.messages || 0}
             </p>
           </div>
 
@@ -30,7 +33,7 @@ const Dashboard = () => {
               AI Responses
             </p>
             <p className="text-2xl font-bold">
-              {data.aiResponses}
+              {data.totalAssistantMessages || 0}
             </p>
           </div>
         </div>
