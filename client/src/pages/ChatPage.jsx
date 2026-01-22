@@ -22,6 +22,10 @@ export default function ChatPage() {
   useEffect(() => {
     const id = localStorage.getItem("conversationId");
     if (id) setConversationId(id);
+    
+    // Log API URL for debugging
+    console.log("API URL:", import.meta.env.VITE_API_URL);
+    console.log("Server URL:", import.meta.env.VITE_SERVER_URL);
   }, []);
 
   useEffect(() => {
@@ -90,11 +94,12 @@ export default function ChatPage() {
       }
     } catch (err) {
       console.error("Error sending message:", err);
+      const errorMessage = err.response?.data?.message || err.message || "Sorry, I encountered an error. Please try again.";
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: "Sorry, I encountered an error. Please try again.",
+          content: `Error: ${errorMessage}. Please check your connection and try again.`,
         },
       ]);
       setLoading(false);
